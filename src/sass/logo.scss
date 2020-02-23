@@ -1,0 +1,20 @@
+.logo {
+  margin: 0px;
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.logo__link {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  color: $title-color;
+}
+
+.logo__link--transform {
+  display: inline-block;
+  color: $brand-color;
+  font-weight: bold;
+}

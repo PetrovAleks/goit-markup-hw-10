@@ -1,0 +1,26 @@
+.title {
+  position: relative;
+  font-family: $title-font-family;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $title-color;
+  margin-bottom: 120px;
+  margin-top: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../images/2.png);
+    width: 164px;
+    height: 15px;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,188 @@
+.card__overlay::before {
+
+  content: '';
+  position: absolute;
+  width: 235px;
+  height: 230px;
+  top: 100%;
+  background-color: $card-overlay-bgcolor;
+  border: $card-border;
+
+  transition: top 250ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.collection__liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collection__liste-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  overflow: hidden;
+  flex-basis: calc(100% / 4 - 22.5px);
+
+  &:nth-last-child(4n + 1) {
+    margin-right: 0px;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
+  }
+
+  &:hover .card__name--wrapper,
+  &:focus .card__name--wrapper {
+    background-color: $brand-color;
+  }
+
+  &:hover .card__overlay::before,
+  &:focus .card__overlay::before {
+    top: 0;
+  }
+
+  &:hover .card__actions,
+  &:focus .card__actions {
+    opacity: 1;
+  }
+
+
+}
+
+.card__container {
+  position: relative;
+  height: 250px;
+}
+
+.card-images {
+  display: block;
+
+
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.card__images--bgcolor {
+  background-color: $collection-card-bgcolor;
+}
+
+.card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  margin: 0px;
+  padding: 0px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0, 0, 0.58, 1) 250ms;
+}
+
+.card__button {
+  background-color: rgba(26, 188, 156, 0);
+  position: relative;
+  border: $card-button-border;
+  width: 50px;
+  height: 50px;
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-last-child(2) {
+    margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(26, 188, 156, 1);
+    cursor: pointer;
+  }
+}
+
+.card__button--shape {
+  background-color: rgba(255, 255, 255, 0);
+  width: 170px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $card-button-color;
+  font-size: 14px;
+  font-family: $primary-font-family;
+  letter-spacing: -0.02em;
+  background-color: $card-button-bgcolor;
+  padding: 17px;
+  margin-right: 0;
+}
+
+.card__icon {
+  position: absolute;
+  width: 26px;
+  height: 25px;
+  fill: $card-icon-fill;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
+}
+
+.card__icon--basket {
+  position: absolute;
+  width: 35px;
+  height: 30px;
+
+  top: 8px;
+  left: 12px;
+  z-index: 4;
+
+  fill: $card-icon-fill;
+}
+
+.card__name--wrapper {
+  display: flex;
+  align-items: center;
+  background-color: $card-name-bgcolor;
+  position: relative;
+  z-index: 3;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__name {
+  padding: 14px 0px 14px 14px;
+
+  text-decoration: none;
+  font-family: $title-font-family;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  color: $card-button-color;
+}
+
+.card__cost {
+  padding: 14px;
+  margin-left: auto;
+
+  text-decoration: none;
+  font-family: $title-font-family;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+  font-weight: 900;
+  color: $card-button-color;
+  background-color: $card-cost-bgcolor;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

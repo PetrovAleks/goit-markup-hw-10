@@ -1,0 +1,31 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'vars.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+@import 'container.scss';
+
+@import 'title.scss';
+@import 'list-style.scss';
+@import 'linke-style.scss';
+@import './Utils/visually-hidden.scss';
+
+@import 'button.scss';
+
+@import 'nav-user.scss';
+@import 'site-nav.scss';
+@import 'logo.scss';
+
+
+@import 'hero.scss';
+
+@import 'about.scss';
+
+@import 'collection.scss';
+@import 'cards.scss';
+
+@import 'products.scss';
+
+@import 'news.scss';
+@import 'footer.scss';

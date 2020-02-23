@@ -1,0 +1,30 @@
+.site-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav__item {
+  font-family: $primary-font-family;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  margin-right: 34px;
+
+  &:nth-last-child(1) {
+    margin-right: 0px;
+  }
+
+}
+
+
+.site-nav {
+  color: $site-nav-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}

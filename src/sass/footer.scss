@@ -1,0 +1,108 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 135px;
+  background-image: url(../images/bg2decor-full.png);
+  background-repeat: repeat;
+  background-color: $brand-color;
+}
+
+.footer__title {
+  position: relative;
+  font-family: $title-font-family;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $title-color;
+  margin-bottom: 70px;
+  margin-top: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: '';
+
+    background-image: url(../images/3.png);
+    display: block;
+
+    width: 164px;
+    height: 15px;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+}
+
+
+.footer__text {
+  text-align: center;
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+  color: $foooter-text-color;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.form__button {
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 0px 5px 5px 0px;
+  width: 85px;
+  height: 60px;
+  background-color: $button-bgcolor;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-bgcolor;
+
+  }
+
+  &:hover .form__icon,
+  &:focus .form__icon {
+    transform: translate(-20%, -50%);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  top: 50%;
+  left: 50%;
+
+  fill: $card-icon-fill;
+
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  display: block;
+  width: 450px;
+  height: 60px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  padding: 25px 0px 25px 30px;
+
+  font-family: $primary-font-family;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: $primary-text-color;
+
+  cursor: text;
+}

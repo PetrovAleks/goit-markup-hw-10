@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $primary-font-family;
+  background-color: $primary-bgcolor;
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  padding: 0px;
+  margin: 0px;
+}
